@@ -15,11 +15,6 @@ const useStyles = makeStyles({
     height: 630,
     textAlign: "center",
   },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)",
-  },
   title: {
     fontSize: 14,
   },
@@ -35,7 +30,6 @@ const ProductCard = ({ product, productid }) => {
   const products = Object.values(data);
 
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   useEffect(() => {
     const fetchProducts = async () => {
